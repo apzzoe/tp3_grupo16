@@ -28,7 +28,7 @@ public class Ejercicio3 {
 				System.out.print("Ingrese salario: ");
 				double salario = tecla.nextDouble();
 				empleado1 = new Empleado(nombre, legajo, salario);
-				System.out.println("Empleado creado correctamente.");
+				System.out.println("Empleado creado.");
 				break;
 				
 			case 2:
@@ -48,10 +48,10 @@ public class Ejercicio3 {
 				if (empleado1 != null) { 
 					empleado1.mostrarDatos();
 				} else {
-					System.out.println("Primero debe crear un empleado."); }
+					System.out.println(" debe crear un empleado."); }
 				break;				
 			case 4:
-				System.out.println("Programa finalizado.");
+				System.out.println("Fin del programa.");
 				break;
 				
 			default:
