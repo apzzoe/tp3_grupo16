@@ -95,6 +95,7 @@ public class Ejercicio1 {
 		} while (opcion != 5);
 		scanner.close();
     }
+	
 }
 
 
