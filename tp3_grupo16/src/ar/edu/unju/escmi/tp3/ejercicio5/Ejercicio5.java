@@ -108,7 +108,7 @@ public class Ejercicio5 {
                     break;
 
                 case 5:
-                    System.out.println("Programa finalizado, ¡hasta luego!");
+                    System.out.println("Programa finalizado.");
                     break;
 
                 default:
