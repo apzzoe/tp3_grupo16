@@ -97,12 +97,3 @@ public class Ejercicio1 {
     }
 	
 }
-
-
-
-
-
-
-
-
-
