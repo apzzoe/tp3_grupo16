@@ -5,7 +5,7 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int opcion, contadorGatos=0, MAX=2;
+		int opcion, contadorGatos=0, MAX=5;
 		GatoSimple[] gatos = new GatoSimple[MAX];
 		
 		
@@ -15,7 +15,7 @@ public class Ejercicio2 {
 				+ "1- Crear gato Simple\n"
 				+ "2- Dar de comer a un gato simple\n"
 				+ "3- Mostrar todos los gatos\n"
-				+ "4– Crear gato contrincante para pelear con un gato simple.\n"
+				+ "4– Crear gato contrincante para pelear con un gato simple\n"
 				+ "5- Salir\n "
 				+"-----------------------------------------------------------\n"
 				+"Ingrese su opción: ");
@@ -26,19 +26,19 @@ public class Ejercicio2 {
 		case 1: 
 			if(contadorGatos < MAX){
 				
-				System.out.print("ingrese color: ");
+				System.out.print("Ingrese color: ");
 				String color = sc.next();
-				System.out.print("ingrese tipo de pelaje: ");
+				System.out.print("Ingrese tipo de pelaje: ");
 				String pelaje = sc.next();
-				System.out.print("ingrese peso: ");
+				System.out.print("Ingrese peso: ");
 				float peso = sc.nextFloat();
-				System.out.print("ingrese edad: ");
+				System.out.print("Ingrese edad: ");
 				int edad = sc.nextInt();
-				System.out.print("ingrese nombre: ");
+				System.out.print("Ingrese nombre: ");
 				String nombre = sc.next();
-				System.out.print("ingrese sexo (macho o hembra): ");
+				System.out.print("Ingrese sexo (macho o hembra): ");
 				String sexo = sc.next();
-				System.out.print("ingrese personalidad: ");
+				System.out.print("Ingrese personalidad: ");
 				String personalidad = sc.next();
 				
 				gatos[contadorGatos] = new GatoSimple(color, pelaje, peso, edad, nombre, sexo, personalidad);
@@ -51,7 +51,7 @@ public class Ejercicio2 {
 			
 		case 2:
 			if(contadorGatos>0) {
-				System.out.print("ingrese un plato de comida para el gato: ");
+				System.out.print("Ingrese un plato de comida para el gato: ");
 				String comida = sc.next();
 				gatos[contadorGatos-1].darComida(comida);
 			}
@@ -75,19 +75,19 @@ public class Ejercicio2 {
 			
 		case 4: 
 			if(contadorGatos>0) {
-				System.out.print("ingrese color: ");
+				System.out.print("Ingrese color: ");
 				String color = sc.next();
-				System.out.print("ingrese tipo de pelaje: ");
+				System.out.print("Ingrese tipo de pelaje: ");
 				String pelaje = sc.next();
-				System.out.print("ingrese peso: ");
+				System.out.print("Ingrese peso: ");
 				float peso = sc.nextFloat();
-				System.out.print("ingrese edad: ");
+				System.out.print("Ingrese edad: ");
 				int edad = sc.nextInt();
-				System.out.print("ingrese nombre: ");
+				System.out.print("Ingrese nombre: ");
 				String nombre = sc.next();
-				System.out.print("ingrese sexo (macho o hembra): ");
+				System.out.print("Ingrese sexo (macho o hembra): ");
 				String sexo = sc.next();
-				System.out.print("ingrese personalidad: ");
+				System.out.print("Ingrese personalidad: ");
 				String personalidad = sc.next();
 				
 				GatoSimple gatoContrincante = new GatoSimple(color, pelaje, peso, edad, nombre, sexo, personalidad);
@@ -104,7 +104,7 @@ public class Ejercicio2 {
 			System.out.print("Fin del programa.");
 			break;
 		default: 
-			System.out.println("Ingrese una opción válida. \n");
+			System.out.print("Ingrese una opción válida. \n");
 			break;
 		}
 		
