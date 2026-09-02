@@ -9,7 +9,6 @@ public static void main(String[] args) {
 Scanner scanner = new Scanner(System.in);
 ArrayList<Persona> personas = new ArrayList<>();
 
-
 int opcion;
 do {
 System.out.println("-----------------------------MENÚ-------------------------------");
