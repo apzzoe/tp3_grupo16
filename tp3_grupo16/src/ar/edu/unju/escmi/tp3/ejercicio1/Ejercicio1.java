@@ -26,6 +26,7 @@ public class Ejercicio1 {
            				Persona person=new Persona();
            				System.out.print("Ingrese DNI: ");
            				person.setDni(scanner.nextInt());
+           				scanner.nextLine();
            				System.out.print("Ingrese nombre: ");
            				person.setNombre(scanner.nextLine());
            				System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
@@ -43,6 +44,7 @@ public class Ejercicio1 {
 
            				System.out.print("Ingrese DNI: ");
            				int dni2=scanner.nextInt();
+           				scanner.nextLine();
            				System.out.print("Ingrese nombre: ");
            				String nombre2=scanner.nextLine();
            				System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
@@ -53,13 +55,14 @@ public class Ejercicio1 {
            				String provincia2 = scanner.nextLine();
            				Persona person2 = new Persona(dni2, nombre2, fechaN2, domicilio2, provincia2);
            				
-           				personas.add(person2); 
+           				personas.add(person2);
            				
            			break;
 
            			case 3:
            				System.out.print("Ingrese DNI: ");
            				int dni3=scanner.nextInt();
+           				scanner.nextLine();
            				System.out.print("Ingrese nombre: ");
            				String nombre3=scanner.nextLine();
            				System.out.print("Ingrese fecha de nacimiento (AAAA-MM-DD): ");
