@@ -53,7 +53,7 @@ public class Ejercicio1 {
            				String provincia2 = scanner.nextLine();
            				Persona person2 = new Persona(dni2, nombre2, fechaN2, domicilio2, provincia2);
            				
-           				personas.add(person2);
+           				personas.add(person2); 
            				
            			break;
 
@@ -66,7 +66,6 @@ public class Ejercicio1 {
            				LocalDate fechaN3=LocalDate.parse(scanner.nextLine());
 
            				Persona person3=new Persona(dni3, nombre3, fechaN3);
-
            				personas.add(person3);
            				System.out.println("Provincia: Jujuy");
            			break;
@@ -91,6 +90,7 @@ public class Ejercicio1 {
            			default:
            				System.out.println("Opción no disponible");
            			break;
+           			
            		}
 		} while (opcion != 5);
 		scanner.close();
